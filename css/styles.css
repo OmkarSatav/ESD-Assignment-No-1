@@ -1,0 +1,281 @@
+body {
+    font-family: 'Montserrat';
+}
+
+#title {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../yummyImages/bg.jpeg');
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.navbar-brand{
+    color:#ff4c68;
+}
+
+
+.order-button {
+    display: inline-flex;
+    width: fit-content;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff0051; 
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .arrow-icon {
+    width: 16px;
+    height: 16px;
+    fill: #fff; 
+  }
+  
+  .order-button:hover {
+    background-color: #aa0237;
+  }
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color:rgba(251, 246, 237, 0.845);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #aa0237;
+}
+.container-fluid {
+    padding-left: 0;    
+    padding-right: 0;
+    padding: 3% 15%;
+}
+
+h1 {
+    size: 3rem;
+    line-height: 3rem;
+    color: #ffffff;
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+.title-img {
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    margin-left: 10%;
+}
+
+@media (max-width: 1028px) {
+    .title {
+        text-align: center;
+    }
+    .title-img {
+        position: static;
+        width: 40%;
+        transform: rotate(10deg);
+    }
+}
+
+h3 {
+    font-weight: bold;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+.row {
+    padding: 5% 2% 5% 2%;
+}
+
+#menu-section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#food-cart {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 7% 5%;
+}
+
+.food-box {
+    width: 250px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border:0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.food-box-header {
+    width: 130%;
+    left: -15%;
+    top: 1%;
+    height: 100vh;
+    background-image: radial-gradient(circle, #f9a825, #ffeb99);
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    position: relative;
+}
+
+.menu-title{
+    width:100%;
+    height:40%;
+}
+
+.food-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: left;
+}
+
+.food-image {
+    width: 130%;
+    position: relative;
+    left:-15%;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Food title and price */
+.food-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.food-title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.food-price {
+    font-weight: bold;
+    color: #f5a700;
+}
+
+/* Description */
+.food-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Cart and Rating */
+.food-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart-btn {
+    padding: 5px 10px;
+    background-color: #ff0051;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.food-rating {
+    font-size: 0.9em;
+    color: #ff0051;
+    display: flex;
+    align-items: center;
+}
+.color-maroon{
+    color: #ff0051;
+}
+
+h1.order-food{
+    background-color: rgb(255, 204, 0);
+    color:rgba(0, 0, 0, 0.793);
+    text-align:center;
+    padding: 2% 0;
+    font-size: 2.7rem;
+    user-select: none;
+    font-weight: 700;
+    font-family: 'Montserrat-Black', sans-serif;
+}
+
+footer{
+    width:100%;
+    height:15%;
+    background-color: rgb(255, 204, 0);
+    text-align: center;
+    font-family: 'Montserrat-Black', sans-serif;
+    font-weight: 600;
+}
+
+
+
+.background-login {
+    background-image: url("../yummyImages/login-background.jpg"); 
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  
+.bg-glass {
+   background-color: rgb(230, 200, 124,0.1) !important;
+   backdrop-filter: saturate(200%) blur(25px);
+}
+
+
+.login-description{
+    font-family: 'Montserrat-Black', sans-serif;
+}
+
+input{
+    color:rgba(255, 255, 255, 0.166);
+    font-family: 'Montserrat-Black', sans-serif;
+}
